@@ -24,6 +24,7 @@ Ext.define("NotesApp.controller.Notes", {
         console.log("editNoteCommand");
         this.fireEvent('editNoteCommand', this, record);
     },
+
     launch: function () {
         this.callParent(arguments);
         Ext.getStore("Notes").load();
